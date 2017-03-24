@@ -21,7 +21,7 @@ module.exports = {
       }, function (err, data) {
         if (err) {
           res.status(500).json({
-            message: "get something wrong while getting events"
+            message: "get something wrong while getting events",
             error: err
           })
         }else{
@@ -34,7 +34,7 @@ module.exports = {
     Event.findOne({_id:req.params.id}, function(err, events){
       if (err){
         res.status(500).json({
-          message: "get something wrong while update events"
+          message: "get something wrong while update events",
           error: err
         })
       }
